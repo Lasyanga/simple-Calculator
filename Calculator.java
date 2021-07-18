@@ -8,16 +8,16 @@ class Calculator{
 		display();
 	}
 
-	private boolean isNumber(String number){
+	private boolean isNumber(String number){ // check if the input of the user is Number or not
 		try{
 			Float.parseFloat(number);
 		}catch(Exception e){
-			return false;
+			return false;// if the user input is not number it throws flase
 		}
 		return true;
 	}
 
-	private void Operation(String operator, String x, String y){
+	private void Operation(String operator, String x, String y){// checking what operation going to perform
 		switch(operator){
 			case "+":
 				System.out.print("Result: " + addition(x, y));
