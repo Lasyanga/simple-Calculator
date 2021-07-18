@@ -87,7 +87,7 @@ class Calculator{
 				System.out.print("\nDo you want to perform another Operation? y/n: "); 
 				option = in.readLine();
 
-				if(option.equalsIgnoreCase("y")){ // if the user type y the program will re-run
+				if(option.equalsIgnoreCase("y")){
 					again = true;
 				}else{
 					System.exit(0);
